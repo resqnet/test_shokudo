@@ -14,6 +14,14 @@ postData = {
   'text'    => ''
 }
 
+if ENV["SLACK_TOKEN"].nil? ||
+   ENV["SLACK_CHANNEL"].nil? ||
+   ENV["SHOKUDO_EMAIL"].nil? ||
+   ENV["SHOKUDO_PASS"].nil? then
+  pp 'not found slack token or shokudo id/pass'
+  return
+end
+
 # LOGIN
 url = 'https://minnano.shokudou.jp/users/sign_in'
 
