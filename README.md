@@ -1,1 +1,2 @@
-# todays_shokudo_menu
+# みんなの食堂の今日のメニューを取得してSlackへ通知するよ
+.env
